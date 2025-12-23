@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Workshop-Watch Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+
+<h1>Workshop-Watch</h1>
+
+<div class="dashboard">
+    <div class="machine" id="printer">
+        <h3>3D Printer</h3>
+        <p>Temperature: <span id="printerValue">--</span> °C</p>
+        <p>Status: <span id="printerStatus">Unknown</span></p>
+        <p>Last updated: <span id="printerTime">0</span> sec ago</p>
+    </div>
+
+    <div class="machine" id="cnc">
+        <h3>CNC Mill</h3>
+        <p>Temperature: <span id="cncValue">--</span> °C</p>
+        <p>Status: <span id="cncStatus">Unknown</span></p>
+        <p>Last updated: <span id="cncTime">0</span> sec ago</p>
+    </div>
+
+    <div class="machine" id="compressor">
+        <h3>Air Compressor</h3>
+        <p>Temperature: <span id="compressorValue">--</span> °C</p>
+        <p>Status: <span id="compressorStatus">Unknown</span></p>
+        <p>Last updated: <span id="compressorTime">0</span> sec ago</p>
+    </div>
+</div>
+
+<h2>Temperature History</h2>
+<canvas id="historyChart" width="50" height="12"></canvas>
+
+<script src="script.js"></script>
+</body>
+</html>
